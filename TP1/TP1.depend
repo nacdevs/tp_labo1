@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1535816349 source:/home/alumno/Nestor/TP1/main.c
+	<stdio.h>
+	<stdio_ext.h>
+	<string.h>
+	<stdlib.h>
+
+1535816496 source:/home/alumno/Nestor/TP1/funciones.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+
+1536096282 source:/home/nest/Documents/Code_UTN /labo_sabados/TP1/funciones.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+
+1536096202 source:/home/nest/Documents/Code_UTN /labo_sabados/TP1/main.c
+	<stdio.h>
+	<stdio_ext.h>
+	<string.h>
+	<stdlib.h>
+	"utnH.h"
+
+1536095907 /home/nest/Documents/Code_UTN /labo_sabados/TP1/utnH.h
+
