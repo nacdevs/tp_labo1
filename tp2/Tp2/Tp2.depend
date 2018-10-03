@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1538596447 source:/home/nest/Documents/Code_UTN /labo_sabados/27-9 /tp2/Tp2/Employee.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"Employee.h"
+
+1538273327 /home/nest/Documents/Code_UTN /labo_sabados/27-9 /tp2/Tp2/Employee.h
+
+1538600715 source:/home/nest/Documents/Code_UTN /labo_sabados/27-9 /tp2/Tp2/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"Employee.h"
+
+1538600274 source:/home/nest/Documents/Code_UTN /labo_sabados/27-9 /tp2/Tp2/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1538600293 /home/nest/Documents/Code_UTN /labo_sabados/27-9 /tp2/Tp2/Funciones.h
+
