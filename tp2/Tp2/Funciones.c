@@ -50,7 +50,7 @@ static int getString(char* pBuffer, int limite)
 }
 
 
-int utn_getFloat(float* pFloat, char* msg,
+int utn_getFloat(  float* pFloat, char* msg,
                     char msgErr[],float min, float max,
                     int reintentos)
 
@@ -140,7 +140,7 @@ void initArray(int* pArray, int limite, int valor)
 }
 }
 
-void ordenarArreglo(int *pArray,int limite,int flagMayorMenor)
+void ordenarArray(int *pArray,int limite,int flagMayorMenor)
 {
     int flagnoTerminedeOrdenar=1;
     int aux;
@@ -192,16 +192,16 @@ int verificarArreglosoloFlotantes(char* pBuffer)
 
     return retorno;
 }
-int verificarArregloSoloLetras(char *pArreglo)
+int verificarArrayLetras(char *pArreglo)
 {
     int i=0;
-    int retorno=0;
+    int retorno=1;
     char auxiliar=pArreglo[i];
     while(auxiliar!= '\0')
     {
         if((auxiliar!=' ')&&(auxiliar<'a' || auxiliar>'z') && (auxiliar<'A' || auxiliar>'Z' ))
             {
-                retorno=-1;
+                retorno=0;
                 break;
             }
             i++;
@@ -210,7 +210,7 @@ int verificarArregloSoloLetras(char *pArreglo)
     return retorno;
 }
 
-int verificarArregloAlfanumerica(char *pArreglo)
+int verificarArrayAlfa(char *pArreglo)
 {
     int i=0;
     int retorno=1;
@@ -258,7 +258,7 @@ int verificarNumeroTelefono(char *pArreglo)
     }
     return retorno;
 }
-int verificarArregloSoloNumeros(char *pArreglo)
+int verificarArrayNumeros(char *pArreglo)
 {
     int i=0;
     int retorno=0;
@@ -282,7 +282,7 @@ int verificarArregloSoloNumeros(char *pArreglo)
     int retorno = -1;
 
 
-    if(getString(bufferString,4096) == 0 && verificarArregloSoloNumeros(bufferString)==0)
+    if(getString(bufferString,4096) == 0 && verificarArrayNumeros(bufferString)==0)
     {
         *pBuffer = atoi(bufferString);
         retorno = 0;
@@ -344,8 +344,7 @@ int utn_getLetras(char *pBuffer,int limite,int reintentos,char* msj,char*msjErro
         do{
             reintentos--;
             printf("\n%s",msj);
-            if(getString(buffer,limite)==0 && isLetras(buffer)==0)
-            {
+            if(getString(buffer,limite)==0 && isLetras(buffer)==0){
                 strncpy(pBuffer,buffer,limite);
                 retorno=0;
                 break;
@@ -421,49 +420,4 @@ static int verificarMail(char *arreglo)
             else{retorno=-1;}
 
  return retorno;
-}
-int verificarCuitoCuil(char*arreglo)
-{
-    int retorno;
-    int i=0;
-    int contadorGuion=0;
-    char auxiliar=arreglo[i];
-    while(auxiliar!='\0')
-        {
-            if(!((auxiliar>='0' && auxiliar<='9')|| auxiliar=='-'))
-                {
-                    retorno=-1;
-                    break;
-                }
-                 if(auxiliar=='-')
-                    {
-                        contadorGuion++;
-                    }
-                i++;
-                auxiliar=arreglo[i];
-            }
-    if(contadorGuion==2 && arreglo[0]>='0' && arreglo[1]>=0 && arreglo[2]=='-' && arreglo[12]>=0 && arreglo[11]=='-')
-        {
-            retorno=0;
-        }
-    return retorno;
-}
-
-int utn_getCuiloCuit(char *pBuffer,int limite,int reintentos,char* msj,char*msjError)
-{
-    int retorno=-1;
-    char buffer[limite];
-    if(pBuffer!=NULL && limite >0 && reintentos >=0){
-        do{
-            reintentos--;
-            printf("\n%s",msj);
-            if(getString(buffer,limite)==0 && verificarCuitoCuil(buffer)==0){
-                strncpy(pBuffer,buffer,limite);
-                retorno=0;
-                break;
-            }else
-                printf("\n%s",msjError);
-        }while(reintentos>=0);
-    }
-    return retorno;
 }

@@ -3,6 +3,7 @@
 #include <stdio_ext.h>
 #include <string.h>
 #include "Employee.h"
+#include "Funciones.h"
 
 int main()
 {
@@ -17,20 +18,21 @@ int main()
         utn_getInt(&option,"\nIngrese una opcion\n","Las opciones son del 1 al 5, 5 cierra el programa\n",1,5,15);
         char name[50];
         char lastName[50];
-        float salary;
+        float salary=11000.00;
         int sector;
         int id;
         int index;
-
-
 
         switch(option){
             case 1:
                 utn_getLetras(&name,50,5,"Ingrese nombre\n","El nombre debe ser una palabra de no mas de 50 caracteres\n");
                 utn_getLetras(&lastName,50,5,"Ingrese apellido\n","El apellido debe ser una palabra de menos de 50 caracteres\n");
-                utn_getFloat(&salary,"Ingrese salario\n","error\n",1,9999999999,5);
                 utn_getInt(&sector,"Ingrese número de sector\n","El sector debe ser un numero entero\n",1,150,5);
-                printf("%f",salary);
+                utn_getFloat(&salary,"Ingrese salario\n","Error\n",1,999999999,5);
+
+                printf("%f\n",salary);
+
+
                 addEmployee(&employeeArray,1000,name,lastName,salary,sector);
 
                 break;

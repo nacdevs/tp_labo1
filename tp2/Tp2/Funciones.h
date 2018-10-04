@@ -11,11 +11,11 @@ int calcularMaximoArray(int* pArray, int limite, int* pMaximo);
 
 void initArray(int* pArray, int limite, int valor);
 
-void ordenarArreglo(int *pArray,int limite,int flagMayorMenor);
+void ordenarArray(int *pArray,int limite,int flagMayorMenor);
 
-int verificarArregloSoloLetras(char *pArreglo);
+int verificarArrayLetras(char *pArreglo);
 
-int verificarArregloAlfanumerica(char *pArreglo);
+int verificarArrayAlfa(char *pArreglo);
 
 int verificarNumeroTelefono(char *pArreglo);
 
@@ -29,16 +29,12 @@ int verificarArreglosoloFlotantes(char* pBuffer);
 
 int getFloat(float* pBuffer);
 
-int verificarArregloSoloNumeros(char *pArreglo);
+int verificarArrayNumeros(char *pArreglo);
 
 int getInt(int* pBuffer);
 
 int utn_getLetras(char *pBuffer,int limite,int reintentos,char* msj,char*msjError);
 
 int utn_getMail(char *pBuffer,int limite,int reintentos,char* msj,char*msjError);
-
-int verificarCuitoCuil(char*arreglo);
-
-int utn_getCuiloCuit(char *pBuffer,int limite,int reintentos,char* msj,char*msjError);
 
 #endif // FUNCIONES_H_INCLUDED

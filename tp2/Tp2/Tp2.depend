@@ -23,3 +23,28 @@
 
 1538600293 /home/nest/Documents/Code_UTN /labo_sabados/27-9 /tp2/Tp2/Funciones.h
 
+1538615864 source:/home/alumno/Nestor/tp_labo1/tp2/Tp2/Employee.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"Employee.h"
+
+1538605404 /home/alumno/Nestor/tp_labo1/tp2/Tp2/Employee.h
+
+1538614184 source:/home/alumno/Nestor/tp_labo1/tp2/Tp2/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1538614200 /home/alumno/Nestor/tp_labo1/tp2/Tp2/Funciones.h
+
+1538613899 source:/home/alumno/Nestor/tp_labo1/tp2/Tp2/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"Employee.h"
+	"Funciones.h"
+

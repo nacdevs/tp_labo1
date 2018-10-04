@@ -20,6 +20,7 @@ int initEmployees(Employee* list, int len){
 
 int addEmployee(Employee* list, int len, char name[],char lastName[],float salary,int sector){
     int i;
+    int ret=-1;
 
     for(i=0; i<len;i++){
       if(list[i].isEmpty=1){
@@ -34,9 +35,10 @@ int addEmployee(Employee* list, int len, char name[],char lastName[],float salar
     id=id+1;
     list[i].id=id;
     list[i].isEmpty=0;
-
- return -1;
+    ret=0;
+ return ret;
 }
+//Encuentra empleado por ID
 
 int findEmployeeById(Employee* list, int len,int id){
     int i;
@@ -49,6 +51,8 @@ int findEmployeeById(Employee* list, int len,int id){
     }
     return ret;
 }
+
+//Se le pasa id y borra empleado
 
 int removeEmployee(Employee* list, int len, int id){
 
@@ -64,10 +68,38 @@ int removeEmployee(Employee* list, int len, int id){
  return ret;
 }
 
+//0 y 1 cambia en el orden entre mayor y menor
 
 int sortEmployees(Employee* list, int len, int order){
+    int i;
+    Employee aux;
+    int flagOrdenar=0;
 
-    int flagOrden=1;
+    while(flagOrdenar!=1){
+        flagOrdenar=1;
+        for(i=0;i<len-1;i++){
+        char idAct=list[i].lastName[0];
+        char idSig=list[i+1].lastName[0];
+        if(order==1){
+            if(idAct>idSig){
+                aux=list[i];
+                list[i]=list[i+1];
+                list[i+1]=aux;
+                flagOrdenar=0;
+            }}else{
+               if(idAct<idSig){
+                aux=list[i];
+                list[i]=list[i+1];
+                list[i+1]=aux;
+                flagOrdenar=0;
+
+            }
+        }
+
+    }
+    }
+
+    /*int flagOrden=1;
     Employee aux;
     int i;
 
@@ -95,17 +127,15 @@ int sortEmployees(Employee* list, int len, int order){
     return 0;
 }
 
-int printEmployees(Employee* list, int length){
-    int i;
-      printf("Nombre\tApellido\tID\tSector\n");
-    for(i=0;i<length;i++){
-    if(list[i].isEmpty==0){
-        printf("%s\t%s\t\t%d\t%d\t%.2f\n",list[i].name,list[i].lastName,list[i].id,list[i].sector,list[i].salary);
+int printEmployees(Employee* list, int len){
+    int i=0;
+    printf("Nombre\tApellido\tID\tSector\n");
+    for(i=0;i<len;i++){
+        if(list[i].isEmpty==0){
+        printf("\n%s\t%s\t%d\t%d\n",list[i].name,list[i].lastName,list[i].id,list[i].sector);
+        }
+
     }
-
-
-    }
-
 
  return 0;
 }
