@@ -23,7 +23,7 @@ int addEmployee(Employee* list, int len, char name[],char lastName[],float salar
     int ret=-1;
 
     for(i=0; i<len;i++){
-      if(list[i].isEmpty=1){
+      if(list[i].isEmpty==1){
                 break;
         }
     }
@@ -70,8 +70,9 @@ int removeEmployee(Employee* list, int len, int id){
 
 //0 y 1 cambia en el orden entre mayor y menor
 
-int sortEmployees(Employee* list, int len, int order){
+int sortEmployees(Employee* list, int len){
     int i;
+    int order=1;
     Employee aux;
     int flagOrdenar=0;
 
@@ -99,43 +100,37 @@ int sortEmployees(Employee* list, int len, int order){
     }
     }
 
-    /*int flagOrden=1;
-    Employee aux;
-    int i;
-
-    for(i=0;i<len;i++){
-        aux=list[i];
-        list[i]=list[len-i];
-        list[len-i]=aux;
-    }
-
-   /* while(flagOrden==1)
-    {
-        flagOrden=0;
-        for(i=0;i<len-1;i++)
-        {
-            if((order==1 && list[i]>list[i+1]) || (order==0 && list[i]<list[i+1]))
-            {
-                aux=list[i];
-                list[i]=list[i+1];
-                list[i+1]=aux;
-                flagOrden=1;
-            }
-        }
-    }*/
 
     return 0;
 }
 
 int printEmployees(Employee* list, int len){
-    int i=0;
-    printf("Nombre\tApellido\tID\tSector\n");
+    int i;
+    printf("Nombre\t\tApellido\t\tID\t\tSector\n");
     for(i=0;i<len;i++){
         if(list[i].isEmpty==0){
-        printf("\n%s\t%s\t%d\t%d\n",list[i].name,list[i].lastName,list[i].id,list[i].sector);
+        printf("\n%s\t\t%s\t\t\t%d\t\t%d\n",list[i].name,list[i].lastName,list[i].id,list[i].sector);
         }
 
     }
+
+    //Suma salarios
+    int j;
+    float suma=0;
+    int contadorEmpleados=0;
+    for(j=0;j<len;j++){
+       if(list[j].isEmpty==0){
+            suma=suma+list[j].salary;
+            contadorEmpleados=contadorEmpleados+1;
+
+       }
+
+    }
+
+    float promedio=(suma/contadorEmpleados);
+
+    printf("La suma de los salarios %.2f y el promedio es %.2f\n",suma,promedio);
+
 
  return 0;
 }

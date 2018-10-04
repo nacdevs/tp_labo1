@@ -22,15 +22,16 @@ int main()
         int sector;
         int id;
         int index;
+        int op;
 
         switch(option){
             case 1:
                 utn_getLetras(&name,50,5,"Ingrese nombre\n","El nombre debe ser una palabra de no mas de 50 caracteres\n");
                 utn_getLetras(&lastName,50,5,"Ingrese apellido\n","El apellido debe ser una palabra de menos de 50 caracteres\n");
-                utn_getInt(&sector,"Ingrese número de sector\n","El sector debe ser un numero entero\n",1,150,5);
-                utn_getFloat(&salary,"Ingrese salario\n","Error\n",1,999999999,5);
+                utn_getInt(&sector,"Ingrese número de sector(1 a 150)\n","El sector debe ser un numero entero\n",1,150,5);
+                utn_getFloat(&salary,"Ingrese salario en numero con punto (ej 4.5)\n","Error\n",1,999999999,5);
 
-                printf("%f\n",salary);
+
 
 
                 addEmployee(&employeeArray,1000,name,lastName,salary,sector);
@@ -43,8 +44,8 @@ int main()
 
                 utn_getLetras(&name,50,5,"Ingrese nombre\n","El nombre debe ser una palabra de no mas de 50 caracteres\n");
                 utn_getLetras(&lastName,50,5,"Ingrese apellido\n","El apellido debe ser una palabra de menos de 50 caracteres\n");
-                utn_getFloat(&salary,"Ingrese salario\n","El salario debe ser un numero\n",0,999999999999,5);
-                utn_getInt(&sector,"Ingrese número de sector\n","El sector debe ser un numero entero\n",1,150,5);
+                utn_getFloat(&salary,"Ingrese salario en numero con punto (ej 4.5)\n","El salario debe ser un numero con punto\n",0,999999999999,5);
+                utn_getInt(&sector,"Ingrese número de sector (1 a 150)\n","El sector debe ser un numero entero\n",1,150,5);
 
                 modifyEmployee(&employeeArray,index,name,lastName,salary,sector);
 
@@ -55,6 +56,8 @@ int main()
                 removeEmployee(&employeeArray,1000,id);
                 break;
             case 4:
+
+                sortEmployees(&employeeArray,1000);
                 printEmployees(&employeeArray,1000);
                 break;
             case 5:
