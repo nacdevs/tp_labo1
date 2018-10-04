@@ -14,7 +14,7 @@ int main()
 
 
     while(option!=5){
-        printf("---Menu---\n1.ALTAS\n2.MODIFICAR\n3.BAJA\n4.INFORMAR\n5.SALIR");
+        printf("\n---Menu---\n1.ALTAS\n2.MODIFICAR\n3.BAJA\n4.INFORMAR\n5.SALIR");
         utn_getInt(&option,"\nIngrese una opcion\n","Las opciones son del 1 al 5, 5 cierra el programa\n",1,5,15);
         char name[50];
         char lastName[50];
@@ -22,7 +22,7 @@ int main()
         int sector;
         int id;
         int index;
-        int op;
+
 
         switch(option){
             case 1:

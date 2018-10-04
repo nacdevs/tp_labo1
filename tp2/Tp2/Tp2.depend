@@ -48,14 +48,14 @@
 	"Employee.h"
 	"Funciones.h"
 
-1538622017 source:/home/nest/Documents/Code_UTN /tp2/tp_labo1/tp2/Tp2/Employee.c
+1538623212 source:/home/nest/Documents/Code_UTN /tp2/tp_labo1/tp2/Tp2/Employee.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio_ext.h>
 	<string.h>
 	"Employee.h"
 
-1538619360 /home/nest/Documents/Code_UTN /tp2/tp_labo1/tp2/Tp2/Employee.h
+1538622806 /home/nest/Documents/Code_UTN /tp2/tp_labo1/tp2/Tp2/Employee.h
 
 1538619360 source:/home/nest/Documents/Code_UTN /tp2/tp_labo1/tp2/Tp2/Funciones.c
 	<stdio.h>
@@ -65,7 +65,7 @@
 
 1538619360 /home/nest/Documents/Code_UTN /tp2/tp_labo1/tp2/Tp2/Funciones.h
 
-1538622034 source:/home/nest/Documents/Code_UTN /tp2/tp_labo1/tp2/Tp2/main.c
+1538623169 source:/home/nest/Documents/Code_UTN /tp2/tp_labo1/tp2/Tp2/main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio_ext.h>

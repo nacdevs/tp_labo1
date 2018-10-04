@@ -14,7 +14,7 @@ int initEmployees(Employee* list, int len){
         list[i].isEmpty=1;
 
     }
-      printf("<Array init>\n");
+
  return 0;
 }
 
@@ -36,6 +36,8 @@ int addEmployee(Employee* list, int len, char name[],char lastName[],float salar
     list[i].id=id;
     list[i].isEmpty=0;
     ret=0;
+    system("clear");
+    printf("Empleado agregado!");
  return ret;
 }
 //Encuentra empleado por ID
@@ -44,11 +46,12 @@ int findEmployeeById(Employee* list, int len,int id){
     int i;
     int ret=-1;
     for(i=0; i<len;i++){
-      if(list[i].id=id){
+      if(list[i].id==id){
             ret=i;
             break;
         }
     }
+
     return ret;
 }
 
@@ -64,6 +67,8 @@ int removeEmployee(Employee* list, int len, int id){
         ret=0;
     }
 
+    system("clear");
+    printf("Empleado dado de baja");
 
  return ret;
 }
@@ -105,6 +110,9 @@ int sortEmployees(Employee* list, int len){
 }
 
 int printEmployees(Employee* list, int len){
+
+    system("clear");
+
     int i;
     printf("Nombre\t\tApellido\t\tID\t\tSector\n");
     for(i=0;i<len;i++){
@@ -116,13 +124,12 @@ int printEmployees(Employee* list, int len){
 
     //Suma salarios
     int j;
-    float suma=0;
+    float suma=0.0;
     int contadorEmpleados=0;
     for(j=0;j<len;j++){
        if(list[j].isEmpty==0){
             suma=suma+list[j].salary;
             contadorEmpleados=contadorEmpleados+1;
-
        }
 
     }
@@ -142,6 +149,8 @@ int modifyEmployee(Employee* list, int i, char name[],char lastName[],float sala
     list[i].salary=salary;
     list[i].sector=sector;
     list[i].isEmpty=0;
+    system("clear");
+    printf("Empleado Modificado");
 
-
+    return 0;
 }
