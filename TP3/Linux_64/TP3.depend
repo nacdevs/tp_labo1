@@ -1,0 +1,156 @@
+# depslib dependency file v1.0
+1533062952 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/Employee.c
+
+1533063050 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1532354323 /home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/LinkedList.h
+
+1533062926 /home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/Employee.h
+
+1533063080 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533062952 source:/home/mauro/Descargas/TP3/Linux_64/Employee.c
+
+1533066103 source:/home/mauro/Descargas/TP3/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1532354323 /home/mauro/Descargas/TP3/Linux_64/LinkedList.h
+
+1533066103 /home/mauro/Descargas/TP3/Linux_64/Employee.h
+
+1533063080 source:/home/mauro/Descargas/TP3/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533145792 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533118898 /home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/LinkedList.h
+
+1533118898 /home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Employee.h
+
+1533118898 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Employee.c
+
+1533145890 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1540514911 source:/home/alumno/Descargas/TP3/TP3/Linux_64/Employee.c
+	"Employee.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1540515571 source:/home/alumno/Descargas/TP3/TP3/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533133022 /home/alumno/Descargas/TP3/TP3/Linux_64/LinkedList.h
+
+1540515479 /home/alumno/Descargas/TP3/TP3/Linux_64/Employee.h
+
+1540511184 source:/home/alumno/Descargas/TP3/TP3/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1533133022 /home/alumno/Descargas/TP3/TP3/Linux_64/Controller.h
+
+1540513208 source:/home/alumno/Descargas/TP3/TP3/Linux_64/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1541034378 source:/home/alumno/Nestor/labo_sabados/pointer/FIles/TP3/Linux_64/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1541030339 /home/alumno/Nestor/labo_sabados/pointer/FIles/TP3/Linux_64/LinkedList.h
+
+1541030339 /home/alumno/Nestor/labo_sabados/pointer/FIles/TP3/Linux_64/Employee.h
+
+1541030339 source:/home/alumno/Nestor/labo_sabados/pointer/FIles/TP3/Linux_64/Employee.c
+	"Employee.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1541034698 source:/home/alumno/Nestor/labo_sabados/pointer/FIles/TP3/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1541030339 /home/alumno/Nestor/labo_sabados/pointer/FIles/TP3/Linux_64/Controller.h
+
+1541033772 source:/home/alumno/Nestor/labo_sabados/pointer/FIles/TP3/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1541102066 source:/home/nest/Documents/Code_UTN /tp3 git 31-10/labo_sabados/pointer/FIles/TP3/Linux_64/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1541043267 /home/nest/Documents/Code_UTN /tp3 git 31-10/labo_sabados/pointer/FIles/TP3/Linux_64/LinkedList.h
+
+1541095896 /home/nest/Documents/Code_UTN /tp3 git 31-10/labo_sabados/pointer/FIles/TP3/Linux_64/Employee.h
+
+1541096254 source:/home/nest/Documents/Code_UTN /tp3 git 31-10/labo_sabados/pointer/FIles/TP3/Linux_64/Employee.c
+	"Employee.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1541043267 source:/home/nest/Documents/Code_UTN /tp3 git 31-10/labo_sabados/pointer/FIles/TP3/Linux_64/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1541043267 /home/nest/Documents/Code_UTN /tp3 git 31-10/labo_sabados/pointer/FIles/TP3/Linux_64/Funciones.h
+
+1541103176 source:/home/nest/Documents/Code_UTN /tp3 git 31-10/labo_sabados/pointer/FIles/TP3/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1541043267 /home/nest/Documents/Code_UTN /tp3 git 31-10/labo_sabados/pointer/FIles/TP3/Linux_64/Controller.h
+
+1541099713 source:/home/nest/Documents/Code_UTN /tp3 git 31-10/labo_sabados/pointer/FIles/TP3/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
