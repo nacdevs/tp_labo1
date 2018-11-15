@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1542322069 source:/home/alumno/Nestor/15-11/tp_labo1/TP4/Ejemplo TP4/EjemploTp4/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1542322069 /home/alumno/Nestor/15-11/tp_labo1/TP4/Ejemplo TP4/EjemploTp4/LinkedList.h
+
+1542322069 /home/alumno/Nestor/15-11/tp_labo1/TP4/Ejemplo TP4/EjemploTp4/Employee.h
+
+1542322069 source:/home/alumno/Nestor/15-11/tp_labo1/TP4/Ejemplo TP4/EjemploTp4/Employee.c
+	"Employee.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1542322069 source:/home/alumno/Nestor/15-11/tp_labo1/TP4/Ejemplo TP4/EjemploTp4/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1542322069 /home/alumno/Nestor/15-11/tp_labo1/TP4/Ejemplo TP4/EjemploTp4/Funciones.h
+
+1542322069 source:/home/alumno/Nestor/15-11/tp_labo1/TP4/Ejemplo TP4/EjemploTp4/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1542322069 /home/alumno/Nestor/15-11/tp_labo1/TP4/Ejemplo TP4/EjemploTp4/Controller.h
+
+1542322069 source:/home/alumno/Nestor/15-11/tp_labo1/TP4/Ejemplo TP4/EjemploTp4/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1542324134 source:/home/alumno/Nestor/15-11/tp_labo1/TP4/Ejemplo TP4/EjemploTp4/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
